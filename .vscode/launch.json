@@ -1,24 +1,35 @@
 {
-  "version": "0.2.0",
-  "configurations": [
-    {
-      "name": "C/C++ Runner: Debug Session",
-      "type": "cppdbg",
-      "request": "launch",
-      "args": [],
-      "stopAtEntry": false,
-      "externalConsole": false,
-      "cwd": "/home/seojang/Subject/5./cpp/ex01",
-      "program": "/home/seojang/Subject/5./cpp/ex01/build/Debug/outDebug",
-      "MIMode": "gdb",
-      "miDebuggerPath": "gdb",
-      "setupCommands": [
-        {
-          "description": "Enable pretty-printing for gdb",
-          "text": "-enable-pretty-printing",
-          "ignoreFailures": true
-        }
-      ]
-    }
-  ]
-}
+	"version": "0.2.0",
+	"configurations": [
+	  // Python 디버깅 설정 추가
+	  {
+		"name": "Python: Current File",
+		"type": "python",
+		"request": "launch",
+		"program": "${file}",
+		"console": "integratedTerminal",
+		"python": "/usr/bin/python3"  // python3 경로 명시
+	  },
+	  // 기존 C++ 설정은 유지
+	  {
+		"name": "C/C++ Runner: Debug Session",
+		"type": "cppdbg",
+		"request": "launch",
+		"args": [],
+		"stopAtEntry": false,
+		"externalConsole": false,
+		"cwd": "/home/seojang/Subject/5./cpp/ex01",
+		"program": "/home/seojang/Subject/5./cpp/ex01/build/Debug/outDebug",
+		"MIMode": "gdb",
+		"miDebuggerPath": "gdb",
+		"setupCommands": [
+		  {
+			"description": "Enable pretty-printing for gdb",
+			"text": "-enable-pretty-printing",
+			"ignoreFailures": true
+		  }
+		]
+	  }
+	]
+  }
+  
